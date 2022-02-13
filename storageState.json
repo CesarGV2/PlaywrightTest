@@ -1,0 +1,46 @@
+{
+  "cookies": [
+    {
+      "sameSite": "None",
+      "name": "csrf",
+      "value": "5ebb9bf92f0e48a09868c456f2b5328f",
+      "domain": "todoist.com",
+      "path": "/",
+      "expires": 1959382942.175904,
+      "httpOnly": false,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga",
+      "value": "GA1.1.753251169.1644022943",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1707094943,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "None",
+      "name": "todoistd",
+      "value": "\"JP4uK1XJcroOeSVhyYVSiBnlcIQ=?pCHK=gAJYIAAAADE2Y2FhM2ZiNmRjNjU2MzhmMzA2ZmY0YjNiZDFlNzFlcQAu&user_id=gAJKYyEcAi4=\"",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1675558943.656801,
+      "httpOnly": true,
+      "secure": true
+    },
+    {
+      "sameSite": "Lax",
+      "name": "_ga_M6V9BEQD2J",
+      "value": "GS1.1.1644022942.1.0.1644022944.0",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1707094944,
+      "httpOnly": false,
+      "secure": false
+    }
+  ],
+  "origins": []
+}
+
