@@ -1,5 +1,6 @@
 const { URLS } = require("../data/Constants.js");
 
+
 exports.HomePage = class HomePage{
 
     constructor(page){

@@ -1,13 +1,18 @@
 {
   "scripts": {
-    "test-smoke":"npx playwright test --grep @smoke --headed",
-    "test-sState": "npx playwright codegen --save-storage=auth.json https://todoist.com/users/showlogin --browser=chromium",
-    "test-login": "npx playwright test .pom/tests/Login.spec.js --headed --project=login",
-    "test-task": "npx playwright test .pom/tests/Task.spec.js --project=task",
-    "test-project": "npx playwright test .pom/tests/Project.spec.js --project=project"
+    "visual": "npx playwright test .pom/tests/firstTest.spec.js",
+    "smoke": "npx playwright test --grep @smoke --reporter=line,allure-playwright",
+    "storageGen": "playwright codegen https://todoist.com/app/today --save-storage=auth.json --browser=firefox",
+    "login": "npx playwright test .pom/tests/Login.spec.js --headed",
+    "login-multi": "npx playwright test .pom/tests/Login.spec.js --browser=all",
+    "task": "npx playwright test .pom/tests/Task.spec.js --headed --reporter=line,allure-playwright",
+    "project": "npx playwright test .pom/tests/Project.spec.js --headed --reporter=line,allure-playwright"
   },
   "devDependencies": {
-    "@playwright/test": "^1.17.1"
+    "@playwright/test": "^1.22.2",
+    "allure-playwright": "^2.0.0-beta.15",
+    "eslint": "^8.16.0",
+    "eslint-plugin-playwright": "^0.9.0"
   },
   "dependencies": {
     "dotenv": "^14.3.2"
