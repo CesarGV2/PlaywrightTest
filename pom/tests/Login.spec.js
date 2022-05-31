@@ -5,10 +5,14 @@ const { CREDENTIALS,URLS } = require("../data/Constants.js");
 test.describe.parallel('Login Suite', () => {
 let loginPage;
 
+test.use({storageState: './storageState.json'})
+
 test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page)
          
-     })
+     });
+    
+
 
 test('As a user I should be able to login with valid credentials @smoke', async ({ page }) => {
     await loginPage.login(CREDENTIALS.STANDARD_USER.USERNAME, CREDENTIALS.STANDARD_USER.PASSWORD);

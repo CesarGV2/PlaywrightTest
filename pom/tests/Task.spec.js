@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const { test, expect } = require('@playwright/test');
 const { TodayPage } = require('../page/TodayPage.js');
 const { CommonPage } = require('../page/CommonPage.js');
@@ -22,7 +23,7 @@ test.beforeEach(async ({ page }) => {
 test.afterEach(async () => {
     await todayPage.deleteTask();
     await expect(todayPage.taskNameCreated).not.toBeVisible();
-    await commonPage.syncPage();
+    //await commonPage.syncPage();
     await commonPage.waitForAPIResponse();
     
 })
@@ -30,7 +31,7 @@ test.afterEach(async () => {
 test('As a logged in user I should be able to create a task with today as due date @smoke', async() => {
     await todayPage.addTask(TASKS.TODAY_TASK_NAME,TASKS.TODAY_TASK_DATE);
     await expect(todayPage.taskNameCreated).toContainText(TASKS.TODAY_TASK_NAME);
-    commonPage.waitForAPIResponse();
+    await commonPage.waitForAPIResponse();
 }) 
 
 test('As a logged in user I should be able to create a task with tomorrow as due date', async() => {

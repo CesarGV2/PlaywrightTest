@@ -34,4 +34,10 @@ exports.ProjectPage = class ProjectPage extends CommonPage{
         await this.deleteProjectOption.click()
         await this.deleteConfirmButton.click();
     }
+
+    async verifyProject(){
+        await expect(this.favoriteProjectCreated).toHaveText(PROJECTS.PROJECT_NAME);
+        await expect(this.favoriteSwitchTrue).toBeVisible();
+        await expect(this.colorName).toHaveText(PROJECTS.PROJECT_COLOR); 
+    }
 }

@@ -10,16 +10,15 @@ exports.TodayPage = class TodayPage extends CommonPage{
         this.createTaskButton = page.locator('button >> text=Add task')
         this.taskNameCreated = page.locator('.markdown_content').last()
         this.tasksCreated = page.locator('.markdown_content')
-        this.moreActionsButton = page.locator('.item_actions_more')
-        this.deleteTaskButton = page.locator('.icon_menu_item__content >> text=Delete task')
-        // this.confirmationButtonModal = page.locator('button >> text=Delete')
+        this.moreActionsButton = page.locator('button[aria-label="More actions"]')
+        this.deleteTaskButton = page.locator('button >> text="Delete task…"')
         this.taskDateOption = page.locator('.item_due_selector >> text=Today')
         this.taskDateTomorrow = page.locator('.scheduler-suggestions-item-label >> text=Tomorrow')
         }
 
         async addTask(taskName,date){
             await this.addTaskButton.click();
-            await this.taskNameInput.type(taskName,{delay: 100})
+            await this.taskNameInput.fill(taskName,{delay: 500})
             if(date==='Tomorrow'){
                 await this.taskDateOption.click();
                 await this.taskDateTomorrow.click();
@@ -30,7 +29,7 @@ exports.TodayPage = class TodayPage extends CommonPage{
         async addMultipleTasks(numberOfTasks){
             await this.addTaskButton.click();
             for(let i=1; i<=numberOfTasks; i++){
-            await this.taskNameInput.type(TASKS.DYNAMIC_TASK_NAME + i,{delay: 100})
+            await this.taskNameInput.fill(TASKS.DYNAMIC_TASK_NAME + i,{delay: 300})
             await this.createTaskButton.click();
             }
             

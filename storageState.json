@@ -1,46 +1,295 @@
 {
   "cookies": [
     {
-      "sameSite": "None",
       "name": "csrf",
-      "value": "5ebb9bf92f0e48a09868c456f2b5328f",
+      "value": "25a2cd7b97d24aac9fd0020814fc61e0",
       "domain": "todoist.com",
       "path": "/",
-      "expires": 1959382942.175904,
+      "expires": 1967753703,
       "httpOnly": false,
-      "secure": true
+      "secure": true,
+      "sameSite": "None"
     },
     {
-      "sameSite": "Lax",
+      "name": "_csrf",
+      "value": "umU2FEdYSDszg6CP9nHzVit0",
+      "domain": "todoist.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "device_id",
+      "value": "111e3249-6a81-e85a-5dac-2f5108708592",
+      "domain": "todoist.com",
+      "path": "/auth",
+      "expires": 1683929704,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.645118626.1653599399",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1661375398,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_ga_HCDW2MG61G",
+      "value": "GS1.1.1653599398805.xg9r4sx9.1.0.1653599398.60",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1716671399,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gat_UA-114971719-6",
+      "value": "1",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653600580,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gat_UA-5309378-4",
+      "value": "1",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653600580,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_hjSessionUser_2771136",
+      "value": "eyJpZCI6ImI2NWY0MTU1LWQ0MjctNWQ1Mi05Zjc3LWJiNjFhZDgzNzQwNiIsImNyZWF0ZWQiOjE2NTIzOTM3MDIzMjYsImV4aXN0aW5nIjp0cnVlfQ==",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1685136521,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjSession_2771136",
+      "value": "eyJpZCI6ImI5M2EwMThkLWUwYTItNDYxNi05YTg1LTMwZjcyNzk5MDY5NSIsImNyZWF0ZWQiOjE2NTM1OTkzMjg5MjcsImluU2FtcGxlIjp0cnVlfQ==",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653602321,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjIncludedInPageviewSample",
+      "value": "1",
+      "domain": "todoist.com",
+      "path": "/",
+      "expires": 1653600641,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjAbsoluteSessionInProgress",
+      "value": "0",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653602321,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_hjIncludedInSessionSample",
+      "value": "1",
+      "domain": "todoist.com",
+      "path": "/",
+      "expires": 1653600641,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_fbp",
+      "value": "fb.1.1653599400894.457400982",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1661376521,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_rollupGA",
+      "value": "GA1.2.379243178.1653599399",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1716672522,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_rollupGA_gid",
+      "value": "GA1.2.1791401990.1653599400",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653686922,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gid",
+      "value": "GA1.2.577672608.1653599400",
+      "domain": ".todoist.com",
+      "path": "/",
+      "expires": 1653686922,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
       "name": "_ga",
-      "value": "GA1.1.753251169.1644022943",
+      "value": "GA1.1.379243178.1653599399",
       "domain": ".todoist.com",
       "path": "/",
-      "expires": 1707094943,
+      "expires": 1716672523,
       "httpOnly": false,
-      "secure": false
+      "secure": false,
+      "sameSite": "None"
     },
     {
-      "sameSite": "None",
-      "name": "todoistd",
-      "value": "\"JP4uK1XJcroOeSVhyYVSiBnlcIQ=?pCHK=gAJYIAAAADE2Y2FhM2ZiNmRjNjU2MzhmMzA2ZmY0YjNiZDFlNzFlcQAu&user_id=gAJKYyEcAi4=\"",
-      "domain": ".todoist.com",
-      "path": "/",
-      "expires": 1675558943.656801,
-      "httpOnly": true,
-      "secure": true
-    },
-    {
-      "sameSite": "Lax",
       "name": "_ga_M6V9BEQD2J",
-      "value": "GS1.1.1644022942.1.0.1644022944.0",
+      "value": "GS1.1.1653599398.1.1.1653600523.0",
       "domain": ".todoist.com",
       "path": "/",
-      "expires": 1707094944,
+      "expires": 1716672523,
       "httpOnly": false,
-      "secure": false
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "lang",
+      "value": "v=2&lang=en-us",
+      "domain": ".ads.linkedin.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&f98ccced-732d-41ab-86f0-4ef3ea8039da\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1715507554,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lang",
+      "value": "v=2&lang=en-us",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UserMatchHistory",
+      "value": "AQIB12aJG3Q-hwAAAYECM1norZESMGucPpCt0pM1uAg65C8LfYxP8RitYfvcQholWerF0LAb1k2QIw",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1656191328,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "value": "AQKpUiaz1PqC2wAAAYECM1noOXWde2dn8QJBQWvx21Sa6cRstIE_CInd71Y11dwP7wkZJ_G14EleDGW1iZKHug",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1656191328,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=TGST09:s=T:r=T:a=T:p=T:g=2306:u=1:x=1:i=1653599328:t=1653685728:v=2:sig=AQH5Qn3_-2bFoGvQTtpNnqjBW6-QYf_v\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1653685728,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&202205122215022da0ee6a-351d-4c8f-8ddc-b131d46a7ff5AQFXlUAFmsyvsCB-h4sa7elUiWV1D7Ns\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1715507554,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "li_sugr",
+      "value": "65fe00d3-3972-4f72-b160-329dc6724ed4",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1661376521,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "U",
+      "value": "0515322041e0a7c614e60b60a29f7284",
+      "domain": ".adsymptotic.com",
+      "path": "/",
+      "expires": 1661376521,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "fr",
+      "value": "0py1qQ0dnIiB7L201..BifYbm...1.0.BijmHf.",
+      "domain": ".facebook.com",
+      "path": "/",
+      "expires": 1661274335,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
     }
   ],
-  "origins": []
+  "origins": [
+    {
+      "origin": "https://todoist.com",
+      "localStorage": [
+        {
+          "name": "User",
+          "value": "{\"auto_reminder\":30,\"business_account_id\":null,\"completed_count\":89,\"completed_today\":0,\"daily_goal\":5,\"date_format\":1,\"dateist_inline_disabled\":false,\"dateist_lang\":null,\"days_off\":[6,7],\"default_reminder\":\"email\",\"email\":\"cesar.guzman@wizeline.com\",\"features\":{\"beta\":0,\"dateist_inline_disabled\":false,\"dateist_lang\":null,\"has_push_reminders\":true,\"karma_disabled\":false,\"karma_vacation\":false,\"restriction\":0},\"full_name\":\"Cersar Guzman\",\"has_password\":true,\"id\":35397987,\"image_id\":null,\"inbox_project\":2272941549,\"is_biz_admin\":false,\"is_premium\":false,\"join_date\":\"2021-09-03T18:45:44.789913Z\",\"karma\":3716,\"karma_trend\":\"up\",\"lang\":\"en\",\"mobile_host\":null,\"mobile_number\":null,\"next_week\":1,\"onboarding_sample_projects\":\"generic\",\"premium_until\":null,\"share_limit\":25,\"sort_order\":0,\"start_day\":7,\"start_page\":\"today\",\"theme\":11,\"time_format\":1,\"token\":\"7ea122dcbdb617a7ad4d6abcfbd9725488359e21\",\"tz_info\":{\"gmt_string\":\"-05:00\",\"hours\":-5,\"is_dst\":1,\"minutes\":0,\"timezone\":\"America/Mexico_City\"},\"unique_prefix\":2,\"verification_status\":\"legacy\",\"websocket_url\":\"wss://ws.todoist.com/ws?token=YmQ3NjQxMmJmNDhlZjI1NgfmWleU0nd4Cv7es5G_Qvc\",\"weekend_start_day\":6,\"weekly_goal\":30}"
+        }
+      ]
+    }
+  ]
 }
-
