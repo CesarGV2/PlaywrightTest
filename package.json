@@ -1,7 +1,7 @@
 {
   "scripts": {
     "visual": "npx playwright test .pom/tests/firstTest.spec.js",
-    "smoke": "npx playwright test --grep @smoke --reporter=line,allure-playwright",
+    "smoke": "npx playwright test --grep @smoke --reporter=line,allure-playwright --workers=3",
     "storageGen": "playwright codegen https://todoist.com/app/today --save-storage=auth.json --browser=firefox",
     "login": "npx playwright test .pom/tests/Login.spec.js --headed",
     "login-multi": "npx playwright test .pom/tests/Login.spec.js --browser=all",
@@ -9,7 +9,7 @@
     "project": "npx playwright test .pom/tests/Project.spec.js --headed --reporter=line,allure-playwright"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.2",
+    "@playwright/test": "^1.28.1",
     "allure-playwright": "^2.0.0-beta.15",
     "eslint": "^8.16.0",
     "eslint-plugin-playwright": "^0.9.0"

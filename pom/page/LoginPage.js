@@ -6,9 +6,9 @@ exports.LoginPage = class LoginPage {
 
     constructor(page) {
         this.page = page;
-        this.email = page.locator('label >> text="Email"');
-        this.password = page.locator('label >> text="Password"');
-        this.submitButton = page.locator('button >> text="Log in"');
+        this.email = page.getByLabel('Email');
+        this.password = page.getByLabel('Password');
+        this.submitButton = page.getByRole('button', { name: 'Log in' });
         this.errorMessage = page.locator('#todoist_app >> text="Wrong email or password."');
         this.homePage = new HomePage(page);
     }
