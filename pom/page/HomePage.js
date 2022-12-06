@@ -5,7 +5,7 @@ exports.HomePage = class HomePage{
 
     constructor(page){
         this.page = page;
-        this.loginLink = page.locator('text=Log in').first();
+        this.loginLink = page.getByRole('link',{name:'Log in'}).first();
     }
 
     async goToLoginPage(){

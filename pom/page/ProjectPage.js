@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 const { CommonPage } = require('../page/CommonPage.js');
-const { test, expect } = require('@playwright/test');
-const { URLS,PROJECTS } = require("../data/Constants.js");
+const { expect } = require('@playwright/test');
+const { PROJECTS } = require("../data/Constants.js");
 
 exports.ProjectPage = class ProjectPage extends CommonPage{
     constructor(page){
@@ -10,8 +11,8 @@ exports.ProjectPage = class ProjectPage extends CommonPage{
         this.projectColorDropdown = page.locator('.color_dropdown_toggle')
         this.colorName = page.locator('.color_dropdown_select__name')
         this.favoriteSwitchTrue = page.locator('.reactist_switch--checked')
-        this.addProjectConfirmButton = page.locator('.ist_button_red >> text="Add"')
-        this.cancelButtonModal = page.locator('.ist_button >> text="Cancel"')
+        this.addProjectConfirmButton = page.getByRole('button', { name: 'Add' })
+        this.cancelButtonModal = page.getByRole('button', { name: 'Cancel'})
         this.projectOptionsButton = page.locator('[aria-label="Project options menu"]')
         //this.addProjectButton = new CommonPage(page).addProjectButton
     }
@@ -24,7 +25,7 @@ exports.ProjectPage = class ProjectPage extends CommonPage{
         await this.addtoFavoriteSwitch.click();
         await this.addProjectConfirmButton.click();
         await this.projectOptionsButton.click();
-        await this.editProjectOption.click();
+       await this.editProjectOption.click();
         
     }
 

@@ -34,7 +34,7 @@ test('As a logged in user I should be able to create a task with today as due da
     await commonPage.waitForAPIResponse();
 }) 
 
-test('As a logged in user I should be able to create a task with tomorrow as due date', async() => {
+test.skip('As a logged in user I should be able to create a task with tomorrow as due date', async() => {
     await todayPage.addTask(TASKS.TOMORROW_TASK_NAME,TASKS.TOMORROW_TASK_DATE);
     await commonPage.upcomingFilter.click();
     await upcomingPage.tomorrowTasks.click();
@@ -42,7 +42,7 @@ test('As a logged in user I should be able to create a task with tomorrow as due
     await commonPage.waitForAPIResponse();
 }) 
 
-test('As a logged in user I should be able to create 10 tasks with today as due date', async() => {
+test.skip('As a logged in user I should be able to create 10 tasks with today as due date', async() => {
     await todayPage.addMultipleTasks(TASKS.NUMBER_OF_TASK);
     await expect(await todayPage.tasksCreated.count()).toBe(TASKS.NUMBER_OF_TASK)
     await expect(await todayPage.validateTasks()).toBe(true)
